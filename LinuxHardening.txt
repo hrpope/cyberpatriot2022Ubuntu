@@ -42,10 +42,11 @@ clamscan (to scan system for malware)
 USE SUDO INSTEAD OF ROOT!!
 sudo passwd -l root (disables root account)
 MAKE SURE cracklib IS INSTALLED
+
+
+CHANGE PASSWORD POLICY (MAKE SURE TO SNAPSHOT BEFORE, note: this section isnt reallyy working)
 sudo apt-get remove libpam-pwquality (Might have to do to get libpam crack to work right)???
 sudo apt-get install libpam-cracklib
-
-CHANGE PASSWORD POLICY (MAKE SURE TO SNAPSHOT BEFORE, ALSO DO THIS LATER BECAUSE IT COULD MESS STUFF UP)
 sudo nano common-password
 After the end of pam_unix.so line add "remember=5"
 After pam_cracklib.so add "ucredit=-1 lcredit=-1 dcredit=-1 ocredit=-1"
