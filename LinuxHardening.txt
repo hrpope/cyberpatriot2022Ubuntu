@@ -65,3 +65,9 @@ go to / (cd ../..)
 sudo apt install plocate (plocate is a tool that assists with locating file types and extentions)
 plocate *.mp3 (or *.jpg, .*mp4, *.png, *.mov, *.gif, *.txt, etc)
 locate *mp3
+
+INSTALL LYNIS TO SCAN FOR VUNERABILITIES
+sudo apt install lynis
+sudo lynis audit system
+
+
