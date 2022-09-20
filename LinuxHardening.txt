@@ -2,6 +2,7 @@ Ubuntu CyberPatriot Checklist WIP
 
 Basic instructions:
 ALWAYS do the forensic questions first!!! IMPORTANT!!!!!
+Helpful forensic site: https://cyberchef.org/
 Make snapshots consistently pls
 Do not stop scoring unless the machine is not working properly at all!!
 Note: Do not use ctrl+c/v in terminal, use ctrl+shift+c/v instead:
