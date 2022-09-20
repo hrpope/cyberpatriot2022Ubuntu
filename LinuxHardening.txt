@@ -65,6 +65,7 @@ go to / (cd ../..)
 sudo apt install plocate (plocate is a tool that assists with locating file types and extentions)
 plocate *.mp3 (or *.jpg, .*mp4, *.png, *.mov, *.gif, *.txt, etc)
 locate *mp3
+Common hacking tools: Recon-ng, Nmap, NetBIOS, Nessus. L0phtCrack, njRAT, Wireshark, SET, HOIC, ZAP, sqlmap, Aicrack-ng, Burp SUite, John the Ripper, Metasploit, Ettercap
 
 INSTALL LYNIS TO SCAN FOR VUNERABILITIES
 sudo apt install lynis
