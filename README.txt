@@ -65,6 +65,7 @@ save and exit nano
 
 REMOVE UNAUTHORIZED FILES, PROGRAMS, AND HACKING TOOLS (media files, games, hacking tools, malware)
 ls -la (shows hidden files)
+Use filefinder.sh bash script to easily find files^^^
 go to / (cd ../..)
 sudo apt install plocate (plocate is a tool that assists with locating file types and extentions)
 plocate *.mp3 (or *.jpg, .*mp4, *.png, *.mov, *.gif, *.txt, etc)
