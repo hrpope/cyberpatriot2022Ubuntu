@@ -75,3 +75,11 @@ Common hacking tools: Recon-ng, Nmap, NetBIOS, Nessus. L0phtCrack, njRAT, Wiresh
 INSTALL LYNIS TO SCAN FOR VUNERABILITIES
 sudo apt install lynis
 sudo lynis audit system
+
+DISABLE ROOT SSH LOGIN
+sudo nano /etc/ssh/sshd_config
+make sure the settings for "PermitRootlogin no"
+"systemctl restart sshd" to restart ssh service
+DISABLE FTP IF NECCISARY
+sudo service vsftpd stop (to stop the servce)
+sudo apt-get remove vsftpd (to remove it)
