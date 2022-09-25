@@ -55,8 +55,8 @@ After the end of pam_unix.so line add "remember=5"
 After pam_cracklib.so add "ucredit=-1 lcredit=-1 dcredit=-1 ocredit=-1"
 save settings and exit the editor
 sudo nano ../login.defs (to open the login settings in nano editor)
-"PASS_MAX_DAYS 45
-PASS_MIN_DAYS 1
+"PASS_MAX_DAYS 90
+PASS_MIN_DAYS 10
 PASS_WARN_AGE 7"
 Go to "/etc/pam.d"
 sudo nano common-auth 
