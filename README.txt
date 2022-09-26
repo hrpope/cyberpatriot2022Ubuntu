@@ -76,6 +76,11 @@ INSTALL LYNIS TO SCAN FOR VUNERABILITIES
 sudo apt install lynis
 sudo lynis audit system
 
+INSTALL CHKROOTKIT (checks for rootkits that could be the system)
+sudo apt install chkrootkit -y (to install)
+sudo chkrootkit (to run)
+sudo chkrootkit > results (see results)
+
 DISABLE ROOT SSH LOGIN
 sudo nano /etc/ssh/sshd_config
 make sure the settings for "PermitRootlogin no"
