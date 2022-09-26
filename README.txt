@@ -16,6 +16,8 @@ sudo apt update && sudo apt upgrade -y #ONE LINER
 sudo apt-get update
 sudo apt-get upgrade
 sudo apt-get dist-upgrade
+turn on automatically checks for updates in the Software & Updates application. 
+
 UPDATE AND CONFIGURE FIREFOX SETTINGS
 firefox --version (To show which version you are running)
 sudo apt install firefox
@@ -29,8 +31,10 @@ sudo nano passwd
 comment out any unauthorized accounts by using a "#" Then save by pressing ctrl+x
 make sure to remove users from unauthorized groups (sudo, adm) while you are in /etc
 sudo nano group
-DISABLE GUEST ACCOUNT
 
+MAKE SURE NO NON-ROOT ACCOUNTS HAVE UID SET TO 0
+awk -F: '($3 == "0") {print}' /etc/passwd (to display al;l counts with UID set to 0)
+root:x:0:0:root:/root:/bin/bash (how the output supposed to look like) 
 TURN ON FIREWALL
 sudo ufw enable (enables firewall)
 sudo ufw status (shows status of firewall)
@@ -85,6 +89,21 @@ DISABLE ROOT SSH LOGIN
 sudo nano /etc/ssh/sshd_config
 make sure the settings for "PermitRootlogin no"
 "systemctl restart sshd" to restart ssh service
+
 DISABLE FTP IF NECCISARY
-sudo service vsftpd stop (to stop the servce)
-sudo apt-get remove vsftpd (to remove it)
+sudo systemctl stop pure-ftpd (to stop the servce)
+sudo systemctl disable pure-ftpd (to disable it)
+
+CHECK LOG FILES 
+Below are the common default log locations
+
+/var/log/message (Where whole system logs or current activity logs are available)
+/var/log/auth.log (Authentication logs)
+/var/log/kern.log (Kernel logs)
+/var/log/cron.log (cron logs)
+/var/log/maillog (mail server logs)
+/var/log/boot.log (System boot log)
+/var/log/mysqld.log (MySQL database server log file)
+/var/log/secure (Authentication log)
+/var/log/utmp or /var/log/wtmp (Login records file)
+/var/log/apt (Apt package manager logs)
