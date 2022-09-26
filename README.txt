@@ -85,6 +85,10 @@ sudo apt install chkrootkit -y (to install)
 sudo chkrootkit (to run)
 sudo chkrootkit > results (see results)
 
+REMOVE ANY UNUSED AND SUS PORTS
+sudo ss -atpu (to list opened and listening ports)
+sudo apt remove "nameOfService" (removes sus services from port listening) 
+
 DISABLE ROOT SSH LOGIN
 sudo nano /etc/ssh/sshd_config
 make sure the settings for "PermitRootlogin no"
