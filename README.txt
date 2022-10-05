@@ -64,7 +64,7 @@ PASS_MIN_DAYS 10
 PASS_WARN_AGE 7"
 Go to "/etc/pam.d"
 sudo nano common-auth 
-Add this line at the end "auth deny=5 onerr=fail unlock_time=1800"
+Add this line at the end "auth required pam_tally2.so deny=5 onerr=fail unlock_time=1800"
 save and exit nano
 
 REMOVE UNAUTHORIZED FILES, PROGRAMS, AND HACKING TOOLS (media files, games, hacking tools, malware)
