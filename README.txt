@@ -9,7 +9,7 @@ Helpful forensic site: https://cyberchef.org/
 Make snapshots consistently pls
 Do not stop scoring unless the machine is not working properly at all!!
 Note: Do not use ctrl+c/v in terminal, use ctrl+shift+c/v instead:
-P@$$W0rd1! is the password we will use when changing user accounts
+ is the password we will use when changing user accounts
 
 UPGRADE/UPDATE SYSTEM FIRST
 sudo apt update && sudo apt upgrade -y #ONE LINER
