@@ -24,7 +24,7 @@ sudo apt install firefox
 Open Firefox and go to Privacy and Security
 Standard protection, Turn off "Ask to save logins and passwords"
 Make sure Dangerous and deceptive content is blocked, addons blocked, popups blocked, and delete cookies
-
+Firefox does not autofill credit card info 
 CHECK USERS AND DISABLE ANY UNAPPROVED USER ACCOUNTS. REMOVE THEM FROM GROUPS ALSO
 cd /etc
 sudo nano passwd
