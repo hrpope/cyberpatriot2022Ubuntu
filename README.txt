@@ -48,9 +48,9 @@ clamscan (to scan system for malware)
 
 USE SUDO INSTEAD OF ROOT!!
 sudo passwd -l root (disables root account)
+FIX INSECURE SUDO CONFIGS VIA SUDOERS FILE
+
 MAKE SURE cracklib IS INSTALLED
-
-
 CHANGE PASSWORD POLICY (MAKE SURE TO SNAPSHOT BEFORE, note: this section isnt reallyy working)
 sudo apt-get remove libpam-pwquality (Might have to do to get libpam crack to work right)???
 sudo apt-get install libpam-cracklib
